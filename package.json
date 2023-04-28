@@ -1,0 +1,12 @@
+{
+  "name": "teste_ui_cypress",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "cypress": "^8.0.0"
+  }
+}
