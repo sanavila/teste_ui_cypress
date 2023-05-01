@@ -7,14 +7,12 @@ describe("Funcionalidade Página de produtos", () => {
 
   it("Deve selecionar um produto da lista", () => {
     cy.get('[class="product-block grid"]')
-      //.first()
-      //.last()
       .eq(3)
       .click();
   });
 
   it("Deve adicionar um produto ao carrinho", () => {
-    var quantidade = 3
+    var quantidade = 5
     cy.get('[class="product-block grid"]')
       .contains('Abominable Hoodie')
       .click();
