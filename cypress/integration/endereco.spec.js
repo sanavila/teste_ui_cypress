@@ -1,6 +1,7 @@
 /// <reference types="cypress" />
 import EnderecoPage from "../support/page-objects/endereco.page"
 import dados from "../fixtures/endereco.json"
+import dadosEntrega from "../fixtures/enderecoEntrega.json"
 
 describe('Funcionalidade endereços ~ Faturamento e entrega', () => {
   beforeEach(() => {
@@ -27,7 +28,7 @@ describe('Funcionalidade endereços ~ Faturamento e entrega', () => {
     cy.get('.woocommerce-message').contains('Endereço alterado com sucesso.', { matchCase: false })
   })
 
-  it('Deve fazer cadastro de faturamento com sucesso', () => {
+  it('Deve fazer cadastro de faturamento com sucesso, usando arquivo de dados', () => {
     EnderecoPage.editarEnderecoFaturamento(
       dados[0].nome,
       dados[0].sobrenome,
@@ -42,5 +43,19 @@ describe('Funcionalidade endereços ~ Faturamento e entrega', () => {
       dados[0].email
       )
     cy.get('.woocommerce-message').contains('Endereço alterado com sucesso.', { matchCase: false })
+  })
+
+  it('Deve editar endereço de entrega', () => {
+    EnderecoPage.editarEnderecoEntrega(
+      dadosEntrega[1].nome,
+      dadosEntrega[1].sobrenome,
+      dadosEntrega[1].empresa,
+      dadosEntrega[1].pais,
+      dadosEntrega[1].endereco,
+      dadosEntrega[1].numero,
+      dadosEntrega[1].cidade,
+      dadosEntrega[1].estado,
+      dadosEntrega[1].cep
+    )
   })
 })
