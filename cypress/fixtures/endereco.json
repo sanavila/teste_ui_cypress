@@ -1,0 +1,41 @@
+[
+  {
+    "nome": "Rute",
+    "sobrenome": "Fernandes",
+    "empresa": "Aeris",
+    "endereco": "São João",
+    "numero": "288",
+    "pais": "Brasil",
+    "cidade": "Caucaia",
+    "estado": "Ceará",
+    "cep": "61604025",
+    "telefone": "85999994444",
+    "email": "email.ebac@hotmail.com"
+  },
+  {
+    "nome": "Eline",
+    "sobrenome": "Ávila",
+    "empresa": "Coca-cola",
+    "endereco": "R.Dois",
+    "numero": "111",
+    "pais": "Brasil",
+    "cidade": "Maracanaú",
+    "estado": "Ceará",
+    "cep": "61604028",
+    "telefone": "8599999999",
+    "email": "eline.12@hotmail.com"
+  },
+  {
+    "nome": "Lucas",
+    "sobrenome": "Lima",
+    "empresa": "Richester",
+    "endereco": "R.Quatro",
+    "numero": "898",
+    "pais": "Brasil",
+    "cidade": "Maracanaú",
+    "estado": "Ceará",
+    "cep": "61688025",
+    "telefone": "85944447711",
+    "email": "lucas@ebac.com"
+  }
+]
