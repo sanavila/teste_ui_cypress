@@ -2,7 +2,7 @@
 
 describe("Funcionalidade Página de produtos", () => {
   beforeEach(() => {
-    cy.visit("http://lojaebac.ebaconline.art.br/produtos/");
+    cy.visit('produtos');
   });
 
   it("Deve selecionar um produto da lista", () => {
@@ -25,4 +25,8 @@ describe("Funcionalidade Página de produtos", () => {
     cy.get('.mini-cart-items').should('contain', quantidade)
     cy.get('.woocommerce-message').contains(`${quantidade} × “Abominable Hoodie” foram adicionados no seu carrinho.`)
   });
+
+  it.only('Deve adicionar produtos ao carrinho usando comando customizado', () => {
+    cy.addProdutos(3, 'Abominable Hoodie')
+  })
 });
